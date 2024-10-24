@@ -71,30 +71,30 @@ function Bride() {
           <div className="col-md">
             <div className='mainsection'>
               <div>
-                <img src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg" className='main-image' alt='t1'></img>
+              <img src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg" className='main-image' alt='t1'></img>
               </div>
               <div className='mainsection-text'>
                 <div className='mainsection-text-1'>결혼식에 초대합니다</div>
                 <div className='mainsection-text-2'>
-                  김신랑 <span className='text2-inner'> & </span> 이신부
+                  백민우 <span className='text2-inner'> & </span> 박현아
                 </div>
-                <div className='mainsection-text-3'>2023. 00. 0 토요일 오전 11시<br/>00대학교 웨딩홀</div>
+                <div className='mainsection-text-3'>2025. 02. 15 토요일 오전 11시 30분<br/>더클래스청담</div>
               </div>
             </div>
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
               <div className='invitation-section-text2'>
-                    저희 두 사람이 사랑과 믿음으로<br/>
-                    한 가정을 이루게 되었습니다.<br/>
-                    바쁘시더라도 부디 오셔서<br/>
-                    저희의 앞날을 축복해 주시고<br/>
-                    격려해 주시면 감사하겠습니다.
+                저희 두 사람이 사랑과 믿음으로<br/>
+                한 가정을 이루게 되었습니다.<br/>
+                바쁘시더라도 부디 오셔서<br/>
+                저희의 앞날을 축복해 주시고<br/>
+                격려해 주시면 감사하겠습니다.
               </div>
               <div className='invitation-section-text3'>
-                김아빠・이엄마<span className='text3-inner'>의 장남</span> 신랑
+                백상준・강영수<span className='text3-inner'>의 차남</span> 신랑
               </div>
               <div className='invitation-section-text3'>
-                이아빠・박엄마<span className='text3-inner'>의 차녀</span> 신부
+                박연일・이민숙<span className='text3-inner'>의 장녀</span> 신부
               </div>
             </div>
             <div className='gallery-section'>
@@ -104,17 +104,18 @@ function Bride() {
             </div>
             <div>
               <div className='gallery-image-list-wrapper row'>
-                  {data.data.map((item, index) => (
+                {data.data.map((item, index) => (
                     <div key={index} className='col-4'>
-                      <img className='gallery-image' src={item.thumb_image_link} alt={item.text} onClick={()=> handleClick(item, index)}/>
+                      <img className='gallery-image' src={item.thumb_image_link} alt={item.text}
+                           onClick={() => handleClick(item, index)}/>
                     </div>
-                  ))}
+                ))}
               </div>
-              {clickedImg && <ImageModal 
-              clickedImg={clickedImg}
-              handleRotationRight={handleRotationRight}
-              handleRotationLeft={handleRotationLeft}
-              setClickedImg={setClickedImg}
+              {clickedImg && <ImageModal
+                  clickedImg={clickedImg}
+                  handleRotationRight={handleRotationRight}
+                  handleRotationLeft={handleRotationLeft}
+                  setClickedImg={setClickedImg}
               />}
             </div>
             <div className='location-section'>
@@ -124,14 +125,14 @@ function Bride() {
             </div>
             <div className='location-map-section'>
               <MapDiv
-                style={{
-                  width: '100%',
-                  height: '350px'
-                }}
+                  style={{
+                    width: '100%',
+                    height: '350px'
+                  }}
               >
-                <NaverMap 
-                  defaultCenter={new navermaps.LatLng(37.44865592343993,126.95097244672262)}
-                  defaultZoom={16}>
+                <NaverMap
+                    defaultCenter={new navermaps.LatLng(37.44865592343993, 126.95097244672262)}
+                    defaultZoom={16}>
                   <Marker 
                   position={new navermaps.LatLng(37.44865592343993,126.95097244672262)} 
                   icon={
