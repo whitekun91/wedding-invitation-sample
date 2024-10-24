@@ -131,10 +131,10 @@ function Bride() {
                   }}
               >
                 <NaverMap
-                    defaultCenter={new navermaps.LatLng(37.44865592343993, 126.95097244672262)}
+                    defaultCenter={new navermaps.LatLng(37.5260774, 127.0422351)}
                     defaultZoom={16}>
                   <Marker 
-                  position={new navermaps.LatLng(37.44865592343993,126.95097244672262)} 
+                  position={new navermaps.LatLng(37.5260774,127.0422351)}
                   icon={
                     {
                       url : pinIcon,
@@ -145,7 +145,7 @@ function Bride() {
               </MapDiv>
             </div>
             <div className='location-info-section'>
-                <div className='location-info-section-text1'>이라운지 서울대점</div>
+                <div className='location-info-section-text1'>더클래스청담</div>
                 <div className='location-info-section-text2'>
                     서울특별시 관악구 관악로 1<br/>
                     서울대학교 310동 엔지니어하우스<br/>
@@ -163,7 +163,7 @@ function Bride() {
             <div className='location-how2-section'>
               <div className='location-how2-section-text1'>자가용</div>
               <div className='location-how2-section-text2'>
-                네비게이션 이용 시 “이라운지 서울대점”을 입력하세요. (주차 2시간 무료)
+                네비게이션 이용 시 “더클래스청담”을 입력하세요. (건물 앞에서 발레파킹)
               </div>
             </div>
             <div className='congratulatory-section'>

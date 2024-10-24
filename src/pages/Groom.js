@@ -135,7 +135,7 @@ function Groom() {
               </MapDiv>
             </div>
             <div className='location-info-section'>
-                <div className='location-info-section-text1'>이라운지 서울대점</div>
+                <div className='location-info-section-text1'>더클래스청담</div>
                 <div className='location-info-section-text2'>
                     서울특별시 관악구 관악로 1<br/>
                     서울대학교 310동 엔지니어하우스<br/>
@@ -153,7 +153,7 @@ function Groom() {
             <div className='location-how2-section'>
               <div className='location-how2-section-text1'>자가용</div>
               <div className='location-how2-section-text2'>
-                네비게이션 이용 시 “이라운지 서울대점”을 입력하세요. (주차 2시간 무료)
+                네비게이션 이용 시 “더클래스청담”을 입력하세요. (주차 2시간 무료)
               </div>
             </div>
           </div>
