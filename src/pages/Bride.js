@@ -86,14 +86,26 @@ function Bride() {
             <div className='invitation-section'>
               <div className='invitation-section-text1'>INVITATION</div>
               <div className='invitation-section-text2'>
-                저희 두 사람이 사랑과 믿음으로<br/>
-                한 가정을 이루게 되었습니다.<br/>
-                바쁘시더라도 부디 오셔서<br/>
-                저희의 앞날을 축복해 주시고<br/>
-                격려해 주시면 감사하겠습니다.
+                사랑은 소유가 아니라 동행임을 아는 두 사람은<br/>
+                잡은 손을 놓지 않되 함부로 잡아끌지 않을 것이며<br/>
+                서로의 두 눈을 고요히 바라보아<br/>
+                말하지 않아도 같은 쪽으로 걸어가리라<br/>
+                - 박미라, '아름다운 날에 부치다' 중에서 <br/>
+
+                <br/>
+
+                저희 두 사람 이제 믿음과 사랑으로 <br/>
+                한 길을 가려 합니다.<br/>
+                그 시작의 한 걸음, 함게 축복해 주시면 감사하겠습니다.<br/>
+
+                <br/>
+                <br/>
+
+                신랑 백민우 · 신부 박현아
+
               </div>
               <div className='invitation-section-text3'>
-                백상준・강영수<span className='text3-inner'>의 차남</span> 신랑
+                백상준・강영수<span className='text3-inner'>의 장남</span> 신랑
               </div>
               <div className='invitation-section-text3'>
                 박연일・이민숙<span className='text3-inner'>의 장녀</span> 신부
