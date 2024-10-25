@@ -71,7 +71,9 @@ function Bride() {
           <div className="col-md">
             <div className='mainsection'>
               <div>
-              <img src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg" className='main-image' alt='t1'></img>
+                <img
+                    src="https://dave-khim-aws-bucket-public.s3.ap-northeast-2.amazonaws.com/test/love-tenderness-couple-s-crossed-hands.jpg"
+                    className='main-image' alt='t1'></img>
               </div>
               <div className='mainsection-text'>
                 <div className='mainsection-text-1'>결혼식에 초대합니다</div>
@@ -133,31 +135,39 @@ function Bride() {
                 <NaverMap
                     defaultCenter={new navermaps.LatLng(37.5260774, 127.0422351)}
                     defaultZoom={16}>
-                  <Marker 
-                  position={new navermaps.LatLng(37.5260774,127.0422351)}
-                  icon={
-                    {
-                      url : pinIcon,
-                      size : new navermaps.Size(64,64)
-                    }
-                  }/>
+                  <Marker
+                      position={new navermaps.LatLng(37.5260774, 127.0422351)}
+                      icon={
+                        {
+                          url: pinIcon,
+                          size: new navermaps.Size(64, 64)
+                        }
+                      }/>
                 </NaverMap>
               </MapDiv>
             </div>
             <div className='location-info-section'>
-                <div className='location-info-section-text1'>더클래스청담</div>
-                <div className='location-info-section-text2'>
-                    서울특별시 관악구 관악로 1<br/>
-                    서울대학교 310동 엔지니어하우스<br/>
-                    Tel. 02-875-7761
-                </div>
+              <div className='location-info-section-text1'>더클래스청담</div>
+              <div className='location-info-section-text2'>
+                서울 강남구 압구정로60길 17-5<br/>
+                서울 강남구 청담동 82-4<br/>
+                Tel. 0507-1446-3638
+              </div>
             </div>
             <div className='location-how-publictrans-section'>
-              <div className='location-how-publictrans-section-text1'>대중교통</div>
+              <div className='location-how-publictrans-section-text1'>지하철</div>
               <ol className='location-how-publictrans-section-list'>
-                <li>2호선 서울대입구역 3번 출구 → 5511,5513 버스 → 제2공학관(종점) 하차</li>
-                <li>2호선 낙성대역 4번 출구 → 관악02 마을버스 → 제2공학관(종점) 하차</li>
-                <li>신림선 관악산역 1번 출구 → 5511,5516 버스 → 제2공학관(종점) 하차</li>
+                <li>분당선 압구정로데오역 3번 출구 나와 직진</li>
+                <li>→ 지방시 매장 골목으로 우회전</li>
+                <li>→ 자딕앤볼테르 매장 지나고 나오는 좌측 작은 골목</li>
+                <li>→ 오르막길 20m 전방 좌측 더클래스청담 위치</li>
+              </ol>
+            </div>
+            <div className='location-how-publictrans-section'>
+              <div className='location-how-publictrans-section-text1'>버스</div>
+              <ol className='location-how-publictrans-section-list'>
+                <li>청담초등학교 앞 하차 : 143, 240, 362, 4318, 4419</li>
+                <li>일지아트홀 하차 : 9407, 9507, 145, 301, 342, 472, 4412</li>
               </ol>
             </div>
             <div className='location-how2-section'>
@@ -168,19 +178,21 @@ function Bride() {
             </div>
             <div className='congratulatory-section'>
               <div className='congratulatory-section-text'>마음 전하실 곳</div>
-                <div 
-                  className='congratulatory-section-btn' 
-                  onClick={() => accountClick(groomAccountData)}>신랑측 계좌번호</div>
-                <div 
+              <div
                   className='congratulatory-section-btn'
-                  onClick={() => accountClick(brideAccountData)}>신부측 계좌번호</div>
+                  onClick={() => accountClick(groomAccountData)}>신랑측 계좌번호
+              </div>
+              <div
+                  className='congratulatory-section-btn'
+                  onClick={() => accountClick(brideAccountData)}>신부측 계좌번호
+              </div>
             </div>
-            {clickedAccountData && <AccountModal 
-              clickedAccountData={clickedAccountData}
-              setClickedAccountData={setClickedAccountData}
-              copiedAccount={copiedAccount}
-              setCopiedAccount={setCopiedAccount}
-              />}
+            {clickedAccountData && <AccountModal
+                clickedAccountData={clickedAccountData}
+                setClickedAccountData={setClickedAccountData}
+                copiedAccount={copiedAccount}
+                setCopiedAccount={setCopiedAccount}
+            />}
           </div>
 
           <div className="col col-md-2 col-lg-3">
@@ -188,7 +200,7 @@ function Bride() {
         </div>
       </div>
     </div>
-    
+
   );
 }
 
