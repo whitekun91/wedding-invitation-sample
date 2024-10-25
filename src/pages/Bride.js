@@ -167,12 +167,12 @@ function Bride() {
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>지하철</div>
-              <ul className='location-how-publictrans-section-list'>
-                <li>분당선 압구정로데오역 3번 출구 나와 직진</li>
-                <li>→ 지방시 매장 골목으로 우회전</li>
-                <li>→ 자딕앤볼테르 매장 지나고 나오는 좌측 작은 골목</li>
-                <li>→ 오르막길 20m 전방 좌측 더클래스청담 위치</li>
-              </ul>
+              <div className='location-info-section-text2'>
+                분당선 압구정로데오역 3번 출구 나와 직진<br/>
+                → 지방시 매장 골목으로 우회전<br/>
+                → 자딕앤볼테르 매장 지나고 나오는 좌측 작은 골목<br/>
+                → 오르막길 20m 전방 좌측 더클래스청담 위치<br/>
+              </div>
             </div>
             <div className='location-how-publictrans-section'>
               <div className='location-how-publictrans-section-text1'>버스</div>
